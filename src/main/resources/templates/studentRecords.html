@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Records</title>
+<style>
+	h2{
+		color: darkslategrey;
+	}
+	table{
+		border-collapse: collapse;
+		width: 80%;
+		background-color: gainsboro;
+	}
+	th,td{
+		border: 1px solid black;
+		padding: 8px;
+		text-align: left;
+		color: darkslategrey;
+	}
+	a{
+		color: cadetblue;
+	}
+             
+</style>
+</head>
+<body>
+	<div align="right">
+		<a href="/api/generate/report">Student-Report</a><br>
+	</div>
+	<div align="center">
+	<h2>Student Record</h2>
+	<table>
+		<thread>
+			<tr>
+				<th>ID</th>
+				<th>NAME</th>
+				<th>AGE</th>
+				<th>GENDER</th>
+				<th>MOBILE</th>
+				<th>EMAIL</th>
+				<th>CITY</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr th:each="student : ${students}">
+				<td th:text="${student.id}"></td>
+				<td th:text="${student.name}"></td>
+				<td th:text="${student.age}"></td>
+				<td th:text="${student.gender}"></td>
+				<td th:text="${student.mobile}"></td>
+				<td th:text="${student.email}"></td>
+				<td th:text="${student.city}"></td>
+				<td><a th:href="@{'/api/edit/' + ${student.id}}">Edit</a></td>
+				<td><a th:href="@{'/api/delete/' + ${student.id}}">Delete</a></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body><br><br>
+
+<a href="/api/profile" color="blue"><center>go back</center></a><br>
+</html>

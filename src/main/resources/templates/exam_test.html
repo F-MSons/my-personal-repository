@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Questions</title>
+<style>
+	h2{
+		color: darkslateblue
+	}
+	table{
+		border-collapse: collapse;
+		width: 80%;
+		background-color: gainsboro;
+	}
+	th,td{
+		border: 1px solid black;
+		padding: 6px;
+		text-align: left;
+		color: darkslategrey;
+	}
+</style>
+</head>
+<body>
+	<div align="center">
+	<h2>Start Test</h2>
+	<form action="score" modelAttribute="test" method="post">
+	<table>
+		<tbody>
+			<th>
+			   <div>
+               <label name="test1">What is Java ? </label><br>
+               <input type="radio" name="test1" value="false">Procedural language<br>
+               <input type="radio" name="test1" value="true">Object-oriented programing language<br>
+               <input type="radio" name="test1" value="false">Extensible programing language<br>
+               <input type="radio" name="test1" value="false">Hyper-text markup language<br><br><br>
+               </div>	
+             
+               <div>
+               <label name="test2">Is Java 100% object-oriented programming ? </label><br>
+               <input type="radio" name="test2" value="false">True<br>
+               <input type="radio" name="test2" value="true">False<br><br><br>
+               </div>
+               
+               <div>
+               <label name="test3">XML stands for ? </label><br>
+               <input type="radio" name="test3" value="false">Extensible language<br>
+               <input type="radio" name="test3" value="false">Extensible programing language<br>
+               <input type="radio" name="test3" value="true">Extensible Markup language<br>
+               <input type="radio" name="test3" value="false">Extends markup language<br><br><br>
+               </div>
+               
+               <div>
+               <label name="test4">What is ORM ? </label><br>
+               <input type="radio" name="test4" value="false">Object Relational Markup<br>
+               <input type="radio" name="test4" value="false">Object Rotational Mapping<br>
+               <input type="radio" name="test4" value="false">Object Rotational Markup<br>
+               <input type="radio" name="test4" value="true">Object Relational Mapping<br><br><br>
+               </div>
+               
+                <div>
+               <label name="test5">JIT Compiler ? </label><br>
+               <input type="radio" name="test5" value="false">.class file into byte code<br>
+               <input type="radio" name="test5" value="false">just in time<br>
+               <input type="radio" name="test5" value="true">convert byte code into native code<br>
+               <input type="radio" name="test5" value="false">convert Java into time<br><br>
+               </div>
+               <h3><center><button type="submit">Submit</button></center></h3>
+			</th>
+		</tbody>
+	</table>
+	</form>
+	</div>
+	
+</body><br><br>
+<a href="/api/sprofile" color="blue"><center>go back</center></a><br>
+</html>

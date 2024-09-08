@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Profile</title>
+<style>
+	h1{
+		color: darkblue;
+		padding: 1%;
+		width: 100%;
+		height: 5%;
+		background-color: cadetblue;
+	}
+	h2{
+		color: darkgreen;
+	}
+	p{
+		color: darkblue;
+	}
+	a{
+		color: blue;
+	}
+	button{
+		color: darkcyan;
+	}
+</style>
+</head>
+
+<body>
+	<table>
+	<nav><div align="center">
+	<h1>Admin Dashboard </h1><br>
+	</div></nav>
+	<tbody>
+			<tr th:each="student : ${students}">
+	          <div class="container" align="left">
+		     <h2>Welcome, [[${student.getName()}]]</h2>
+	          </div>
+	          <div align="right">
+              <a href="/api/logout">Logout</a>
+               </div>
+               </tr><br>
+               <td align="center">
+				   
+	          <tr><a href="/api/test"><center><button>Begin Test</button></center></a><br></tr>
+	          <tr><a href="/api/student/all">List of Student records</a><br><br></tr>
+	          <tr><a href="/api/question/all">List of Questions</a></tr>
+			</td>
+	  </tbody>
+	</table>
+</body>
+
+
+</html>

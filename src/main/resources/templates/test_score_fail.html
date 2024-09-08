@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <style>
+        h2{
+			color: blue;
+		}
+		span{
+			color: coral;
+			background-color: powderblue;
+		}
+		h3{
+			color: orangered;
+		}
+		h4{
+			color: sandybrown;
+		}
+        </style>
+    </head>
+    <body>
+        <div align="center"><br>
+            <div class="content">
+		     <h2>Your Test Score: <span th:text="${score}">%</span><h2>
+		     <h3>Fail !</h3>
+		     <h4>You have not qualified in test...</h4>
+            </div>
+        </div>
+    </body>
+     <a href="/api/test" color="blue"><center>Retake</center></a><br>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style>
+	h2{
+		color: blue;
+	}
+	form{
+		padding: 2%;
+		border-collapse: collapse;
+		color: darkblue;
+		width: 50%;
+		height: 60%;
+	}
+	button{
+			background-color: royalblue;
+		}
+	table{
+		border-collapse: collapse;
+		width: 80%;
+		background-color: gainsboro;
+	}
+	th,td{
+		border: 1px solid black;
+		padding: 8px;
+		text-align: center;
+	}
+</style>
+</style>
+</head>
+<body>
+<div align="center">
+<h2>Student Registration Form</h2>
+<form action="add" modelAttribute="student" method="POST">	
+	<table>
+		<tbody>
+			<tr>
+				<th>
+<div>
+<label name="role">Role : </label>
+<input type="radio" name="role" value="student" required>Student
+<input type="radio" name="role" value="admin" required> Admin<br><br><br>
+</div>	
+<label name="id">St_ID :</label>
+<input type="text" name="id" /><br><br>
+<label name="name">Name :</label>
+<input type="text" name="name" /><br><br>
+<label name="age">Age :</label>
+<input type="text" name="age" /><br><br>
+<div>
+<label name="gender">Gender :</label>
+<input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br><br>
+</div>
+<label name="mobile">Mobile :</label>
+<input type="text" name="mobile" /><br><br>
+<label name="city">City :</label>
+<input type="text" name="city" /><br><br>
+<label name="email">Email :</label>
+<input type="text" name="email" /><br><br>
+<label name="password">Password :</label>
+<input type="password" name="password" placeholder="set password"/><br><br>
+<button type="submit">Register</button><br><br>
+</form>
+</div>
+	</th>
+		</tr>
+		  </tbody>
+	</table>
+<a href="/api/login" color="blue"><center>Login</center></a><br><br>
+</body>
+</html>

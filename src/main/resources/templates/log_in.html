@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+	<meta charset="ISO-8859-1">
+	<title>login</title>
+	<style>
+		h1 {
+			color: blue;
+		}
+		form {
+			border-collapse: collapse;
+			color: darkblue;
+			
+		}
+		button{
+		background-color: royalblue;
+		}
+		table{
+	    border-collapse: collapse;
+	    width: 40%;
+		height: 50%;
+		background-color: gainsboro;
+	    }
+	    th{
+		border: 1px solid black;
+		text-align: center;
+	    }
+	</style>
+	</head>
+
+<body>
+	<div align="center">
+		<h1>Please Login</h1><br><br>
+		<form th:action="profile" modelAttribute="student1" method="post">
+			<table>
+				<tbody>
+					<tr>
+						<th>			
+			     <div>
+				<label name="role" aria-required="true">Role : </label>
+				<input type="radio" name="role" value="student" >Student
+				<input type="radio" name="role" value="admin" > Admin<br><br><br>
+			     </div>
+			     <div>
+			   <level="email">Username:</level>
+				<input type="text" name="email" placeholder="Enter email id" required/><br><br>
+				</div>
+				<div>
+				<level="password">Password:</level>
+					<input type="password" name="password" placeholder="Enter password" required/><br><br>
+					</div>
+					<button type="submit">Login</button>	
+						</th>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+	</div>
+  </body>
+</html>

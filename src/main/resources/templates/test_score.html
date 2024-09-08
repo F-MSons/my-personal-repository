@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <style>
+        h2{
+			color: blue;
+		}
+		span{
+			color: green;
+			background-color: cornsilk;
+		}
+		h3{
+			color: seagreen;
+		}
+		a{
+			color: cadetblue;
+		}
+        </style>
+    </head>
+     <body>
+		 <div align="right">
+			 <form action="/api/generate/report" modelAttribute="student" method="post">
+         <button href="/api/generate/report" color="blue">Download-Score-Report</button><br>
+          </form>
+          </div>
+          <table>
+			  <tbody>
+        <div align="center"><br>
+            <div class="content">
+		     <h2>Your Test Score: <span th:text="${score}">%</span><h2>
+		     <h3>Congratulation !</h3>
+		     <h3>You have successfully completed...</h3>
+            </div>
+         </div>
+         </tbody>
+         </table>
+    </body>
+     <a href="/api/test" color="blue"><center>go back</center></a><br>
+</html>
