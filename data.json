@@ -1,6 +1,6 @@
 {
 "users":[
- {
+   {
 	"id": "1010",
     	"name":"Prashant",
     	"email":"prashant@cg.com",
@@ -14,9 +14,9 @@
             "city":"pune",
 			"state":"maharastra"
         }
-    ]
- },
- {
+      ]
+    },
+    {
  	"id": "1021",
      "name":"Harish",
      "email":"harish@cg.com",
@@ -30,12 +30,12 @@
             "city":"pune",
  			"state":"maharastra"
          }
-     ]
-  },
-  {
-  	"id": "1041",
-      "name":"Prashant",
-      "email":"pc@cg.com",
+       ]
+     },
+     {
+  	  "id": "1041",
+      "name":"Vignesh",
+      "email":"vignesh@cg.com",
       "phone":"7873954372",
       "addresses":[
           {
@@ -46,12 +46,12 @@
             "city":"gurgaon",
   			"state":"up"
           }
-      ]
-   },
-   {
-   	"id": "1030",
-       "name":"Prashant",
-       "email":"pc@cg.com",
+         ]
+       },
+       {
+       "id": "1030",
+       "name":"Monika",
+       "email":"monika@cg.com",
        "phone":"7673954328",
        "addresses":[
            {
@@ -62,8 +62,8 @@
             "city":"gurgaon",
    			"state":"up"
            }
-       ]
-    }
-]
-
+          ]
+        }
+    ]
 }
+
