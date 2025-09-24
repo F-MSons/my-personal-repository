@@ -1,0 +1,66 @@
+{
+ {
+	"id": "1010",
+    "name":"Prashant",
+    "email":"prashant@cg.com",
+    "phone":"9873954392",
+    "addresses":[
+        {
+            "city":"agra",
+			"state":"up"
+        },
+		{
+            "city":"pune",
+			"state":"maharastra"
+        }
+    ]
+ },
+ {
+ 	"id": "1021",
+     "name":"Harish",
+     "email":"harish@cg.com",
+     "phone":"9973954383",
+     "addresses":[
+         {
+            "city":"hyderabad",
+ 			"state":"Telengana"
+         },
+		 {
+            "city":"pune",
+ 			"state":"maharastra"
+         }
+     ]
+  },
+  {
+  	"id": "1041",
+      "name":"Prashant",
+      "email":"pc@cg.com",
+      "phone":"7873954372",
+      "addresses":[
+          {
+            "city":"lakhnow",
+  			"state":"up"
+          },
+		  {
+            "city":"gurgaon",
+  			"state":"up"
+          }
+      ]
+   },
+   {
+   	"id": "1030",
+       "name":"Prashant",
+       "email":"pc@cg.com",
+       "phone":"7673954328",
+       "addresses":[
+           {
+            "city":"patna",
+   			"state":"bihar"
+           },
+		   {
+            "city":"gurgaon",
+   			"state":"up"
+           }
+       ]
+    }
+}
