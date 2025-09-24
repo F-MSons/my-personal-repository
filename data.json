@@ -1,10 +1,11 @@
 {
+"users":[
  {
 	"id": "1010",
-    "name":"Prashant",
-    "email":"prashant@cg.com",
-    "phone":"9873954392",
-    "addresses":[
+    	"name":"Prashant",
+    	"email":"prashant@cg.com",
+    	"phone":"9873954392",
+    	"addresses":[
         {
             "city":"agra",
 			"state":"up"
@@ -63,4 +64,6 @@
            }
        ]
     }
+]
+
 }
