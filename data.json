@@ -63,7 +63,24 @@
    			"state":"up"
            }
           ]
+        },
+	 {
+       "id": "1041",
+       "name":"Digamber",
+       "email":"digamber@cg.com",
+       "phone":"7973954381",
+       "addresses":[
+           {
+            "city":"pune",
+   			"state":"maharastra"
+           },
+		   {
+            "city":"latur",
+   			"state":"maharastra"
+           }
+          ]
         }
     ]
 }
+
 
